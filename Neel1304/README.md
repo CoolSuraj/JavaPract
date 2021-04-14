@@ -9,8 +9,8 @@ The workspace contains two folders by default, where:
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
   and packages are com.pract.neel.
-  1. automobile
-  2.complex
+  1. automobile 
+  2. complex
   3. shape
   4. mathOP
   5. hacked
