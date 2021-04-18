@@ -1,6 +1,10 @@
 ## Getting Started
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+There are three classes showing three main type of Db Queries 
+1. DDL
+2. DML
+3. DQL
+There are others but that can be easily implemented over execute of which example is here
 
 ## Folder Structure
 
@@ -8,7 +12,9 @@ The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
 - `lib`: the folder to maintain dependencies
+- jar file also to be added in reference/dependecy
 
 ## Dependency Management
 
-The `JAVA DEPENDENCIES` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-pack/blob/master/release-notes/v0.9.0.md#work-with-jar-files-directly).
+Detailed Infor = https://www.javatpoint.com/Statement-interface
+To get connector jar file https://dev.mysql.com/downloads/connector/j/ 
