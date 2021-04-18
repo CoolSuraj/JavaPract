@@ -4,7 +4,7 @@ There are three classes showing three main type of Db Queries
 1. DDL
 2. DML
 3. DQL
-There are others but that can be easily implemented over execute of which example is here
+There are others but that can be easily implemented over (execute command) of which example is here
 
 ## Folder Structure
 
