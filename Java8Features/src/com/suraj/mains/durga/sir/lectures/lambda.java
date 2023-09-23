@@ -1,3 +1,4 @@
+package com.suraj.mains.durga.sir.lectures;
 import java.util.*;
 import java.util.function.Function;
 import java.util.function.Predicate;
