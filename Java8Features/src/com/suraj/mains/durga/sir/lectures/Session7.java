@@ -38,9 +38,9 @@ public class Session7 {
 		
 		
 		//function chaining
-		System.out.println(upper.andThen(up).apply("fffffff"));
+		System.out.println(upper.andThen(up).apply("fffffff"));  //first upper runs then up runs
 		//now we can do the same by below lines
-		System.out.println(up.compose(upper).apply("fffffff"));
+		System.out.println(up.compose(upper).apply("fffffff")); //here also first upper runs then up runs  although written opposite
 		
 		//Now in this fashion you can use it any number of times
 		System.out.println(upper.andThen(up).andThen(up).andThen(up).andThen(up).apply("fffffff"));
