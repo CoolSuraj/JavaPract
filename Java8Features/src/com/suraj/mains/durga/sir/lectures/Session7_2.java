@@ -14,10 +14,13 @@ public class Session7_2 {
 		Consumer<String> p = s->System.out.println(s);
 		p.accept("Durga");
 		
+		Consumer<String> q = s->System.out.println(s);
+		q.accept("God");
+		
 		Consumer <Integer> c = i->System.out.println(i*i);
 		c.accept(3);
 		
-		
+		p.andThen(q).accept("jj");
 		
 		
 		
