@@ -45,7 +45,7 @@ public class StreamMain1 {
 		//Way2
 		String[] names = {"Suraj","Sanjay","Gurav","Dada","Kata","Bhai"};
 		Stream<String> streamOfStrings = Stream.of(names);
-		//streamOfStrings.forEach(e->{e.})
+		streamOfStrings.filter(e->e.startsWith("S")).forEach(System.out::println);
 		
 	}
 
