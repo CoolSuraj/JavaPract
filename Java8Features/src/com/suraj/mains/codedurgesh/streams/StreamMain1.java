@@ -1,6 +1,7 @@
 package com.suraj.mains.codedurgesh.streams;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
@@ -8,7 +9,7 @@ import java.util.stream.Stream;
 public class StreamMain1 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
 
 		List<Integer> li = List.of(3, 4, 5, 6, 7, 8, 9, 10);
 
@@ -22,7 +23,7 @@ public class StreamMain1 {
 
 		l2.clear();
 		/*
-		 * Stream is lazy pipeline method given to coder to do the job neccassary which
+		 * Stream is lazy pipeline method given to coder to do the job necessary which
 		 * saves space and Time filter uses Predicate to get the results
 		 */
 		Stream<Integer> stream = li.stream();
@@ -42,11 +43,31 @@ public class StreamMain1 {
 															// any value to begin with
 		});
 		
-		//Way2
+		//Way2  --for array/collection/strings
 		String[] names = {"Suraj","Sanjay","Gurav","Dada","Kata","Bhai"};
 		Stream<String> streamOfStrings = Stream.of(names);
 		streamOfStrings.filter(e->e.startsWith("S")).forEach(System.out::println);
-		
+
+
+		//way 3 --builder pattern
+
+		Stream<Object> streambuilder = Stream.builder().build(); //making a Stream using builder
+
+		//Way 4
+		Stream<String> StreamArray = Arrays.stream(names);
+		System.out.println("----------------Arrays Stream-------------");
+		StreamArray.forEachOrdered(System.out::println);
+
+		//Way 5 List,set
+		List<Integer> lis = new ArrayList<>();
+		for (int i=10;i<1000;i+=10){
+			lis.add(i);
+		}
+		Stream<Integer> streamList = lis.stream();
+
+		streamList.filter(i -> i%7==0).forEach(e-> System.out.print(" "+e));
+
+
 	}
 
 }
