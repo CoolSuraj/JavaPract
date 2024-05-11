@@ -1,8 +1,8 @@
-website for challenge
+--website for challenge
 
-https://mystery.knightlab.com/#experienced
+--https://mystery.knightlab.com/#experienced
 
-part 1:
+--part 1:
 
 select * from crime_scene_report where city = 'SQL City'
 and date = '20180115' and type = 'murder';
@@ -31,6 +31,22 @@ select membership_id from get_fit_now_check_in where check_in_date = 20180109
 and membership_id in (select  id from get_fit_now_member where  membership_status = 'gold' )
 and check_out_time >= (select check_in_time from get_fit_now_check_in where membership_id = 90081)));
 
+--part 2 
 
+select p.annual_income,p.ssn from income p where p.ssn in (
+select distinct a.ssn  from person a , drivers_license b
+where 1=1
+and a.license_id =b.id
+and b.height between 65 and 67  
+and b.hair_color = 'red' and b.car_model='Model S' 
+and b.gender = 'female')
+order by annual_income desc limit 1
+;
+
+--961388910
+--337169072
+--987756388
+select name from person where ssn in (
+select i.ssn from income i where i.ssn = 987756388);
 
               
